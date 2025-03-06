@@ -1,8 +1,7 @@
-// ProductHero.jsx
 import React from "react";
-import heroImage from "../assets/4 1.png"; // Foreground center image
-import backgroundImage from "../assets/ZG29.png"; // Background image
-import heroVideo from "../assets/video2.mp4"; // Replace with your small video
+import heroImage from "../assets/4 1.png";
+import backgroundImage from "../assets/ZG29.png";
+import heroVideo from "../assets/video2.mp4";
 
 const ProductHero = () => {
   return (
@@ -14,7 +13,6 @@ const ProductHero = () => {
       }}
     >
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 sm:gap-12 md:gap-20 mt-5 relative">
-        {/* Left Side - Text, Price, and Button */}
         <div className="w-full md:w-1/3 text-white mb-6 sm:mb-8 md:mb-0 relative z-10 text-center md:text-left">
           <h1 className="text-3xl sm:text-4xl md:text-5xl mb-4 mt-9">
             Stylish & <br />
@@ -29,7 +27,6 @@ const ProductHero = () => {
           </button>
         </div>
 
-        {/* Center - Foreground Image with Background */}
         <div className="w-full relative flex justify-center mt-9">
           <img
             src={backgroundImage}
@@ -43,7 +40,6 @@ const ProductHero = () => {
           />
         </div>
 
-        {/* Right Side - Small Video */}
         <div className="w-full md:w-1/3 flex justify-center md:justify-end relative z-10">
           <video
             src={heroVideo}

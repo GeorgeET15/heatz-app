@@ -1,4 +1,3 @@
-// CardGrid.jsx
 import React from "react";
 import SmallCardComponent from "./SmallCardComponent";
 
@@ -7,7 +6,6 @@ import img2 from "../assets/hb7_1 2.png";
 import img3 from "../assets/hb7_1 3.png";
 import img4 from "../assets/hb9_1 1.png";
 
-// Sample data for 20 cards (unchanged)
 const cardData = [
   {
     image: img1,

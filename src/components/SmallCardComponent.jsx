@@ -1,4 +1,3 @@
-// SmallCardComponent.jsx
 import React from "react";
 
 const SmallCardComponent = ({ image, title, description, price }) => {

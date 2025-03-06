@@ -1,4 +1,3 @@
-// CardComponent.jsx
 import React from "react";
 
 const CardComponent = ({ image, title, description, price }) => {

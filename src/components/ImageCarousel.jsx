@@ -1,4 +1,3 @@
-// ImageCarousel.jsx
 import React from "react";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/outline";
 
@@ -13,7 +12,6 @@ import img8 from "../assets/Insta_3.png";
 import img9 from "../assets/Insta_4.png";
 import img10 from "../assets/Insta_5.png";
 
-// Sample image data for the carousel
 const carouselImages = [
   { src: img1, alt: "Headphone 1" },
   { src: img2, alt: "Headphone 2" },
@@ -39,7 +37,6 @@ const ImageCarousel = () => {
     <section className="py-12 px-4 md:px-8 bg-black mt-6">
       <div className="w-full mx-auto">
         <div className="relative">
-          {/* Left Arrow Button */}
           <button
             onClick={scrollLeft}
             className="absolute left-0 top-1/2 transform -translate-y-1/2z-10"
@@ -47,7 +44,6 @@ const ImageCarousel = () => {
             <ChevronLeftIcon className="w-6 h-6 text-[#EEEEEE] hover:text-white" />
           </button>
 
-          {/* Carousel Content */}
           <div
             ref={scrollRef}
             className="flex flex-row justify-start gap-0 overflow-x-auto"
@@ -63,7 +59,6 @@ const ImageCarousel = () => {
             ))}
           </div>
 
-          {/* Right Arrow Button */}
           <button
             onClick={scrollRight}
             className="absolute right-0 top-1/2 transform -translate-y-1/2   z-10"

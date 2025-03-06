@@ -18,7 +18,6 @@ const BoostSection = () => {
   return (
     <section className="py-12 px-4 md:px-8 bg-black">
       <div className="max-w-5xl mx-auto h-[100vh]">
-        {/* Heading and Paragraph */}
         <div className="flex flex-col md:flex-row md:space-x-8 mb-8">
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
@@ -36,7 +35,6 @@ const BoostSection = () => {
           </div>
         </div>
 
-        {/* Image Carousel */}
         <div className="relative w-full max-w-5xl mx-auto">
           <Swiper
             modules={[Navigation, Autoplay, Pagination]}
@@ -57,7 +55,7 @@ const BoostSection = () => {
                   alt={`Slide ${index + 1}`}
                   className="w-full h-64 md:h-[500px] object-cover"
                 />
-                {/* Overlay Text and Button */}
+
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
                   <h3 className="text-3xl md:text-4xl font-bold mb-6 ">
                     {" "}

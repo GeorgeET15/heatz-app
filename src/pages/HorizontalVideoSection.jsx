@@ -1,4 +1,3 @@
-// HorizontalVideoSection.jsx
 import React, { useRef } from "react";
 import { ChevronRightIcon, ChevronLeftIcon } from "@heroicons/react/24/outline";
 import VideoCardComponent from "../components/VideoCardComponent";
@@ -9,7 +8,6 @@ const HorizontalVideoSection = () => {
   const videos = [vid1, vid2, vid1, vid2, vid1, vid2, vid1, vid2, vid1];
   const scrollRef = useRef(null);
 
-  // Scroll handlers for navigation buttons
   const scrollLeft = () => {
     if (scrollRef.current) {
       const cardWidth =
@@ -29,7 +27,6 @@ const HorizontalVideoSection = () => {
   return (
     <section className="py-12 px-4 md:px-8 bg-black">
       <div className="max-w-5xl mx-auto">
-        {/* Heading and Paragraph */}
         <div className="flex flex-col md:flex-row md:space-x-40 mb-25">
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-extrabold text-white">
@@ -48,7 +45,6 @@ const HorizontalVideoSection = () => {
         </div>
       </div>
 
-      {/* Horizontal Video Carousel */}
       <div className="relative px-4 sm:px-6 md:px-8">
         <div
           ref={scrollRef}

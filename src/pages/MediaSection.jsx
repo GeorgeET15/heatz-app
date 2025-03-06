@@ -1,4 +1,3 @@
-// MediaSection.jsx
 import React from "react";
 import img1 from "../assets/gaming 1.png";
 import vid1 from "../assets/video2.mp4";
@@ -7,7 +6,6 @@ const MediaSection = () => {
   return (
     <section className="py-8 px-4 sm:px-6 md:px-8 bg-black">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8">
-        {/* Left Media - Image */}
         <div className="w-full max-w-[450px] sm:max-w-[550px] h-64 sm:h-80 md:h-[550px] flex-shrink-0">
           <img
             src={img1}
@@ -16,7 +14,6 @@ const MediaSection = () => {
           />
         </div>
 
-        {/* Right Media - Video */}
         <div className="w-full max-w-[450px] sm:max-w-[550px] h-64 sm:h-80 md:h-[550px] flex-shrink-0">
           <video
             src={vid1}

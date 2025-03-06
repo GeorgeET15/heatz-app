@@ -1,4 +1,3 @@
-// Navbar.jsx
 import { useState } from "react";
 import {
   MagnifyingGlassIcon,
@@ -11,7 +10,6 @@ import {
 } from "@heroicons/react/24/outline";
 import logoImage from "../assets/logo.png";
 
-// Sample images (replace with your actual image paths)
 import smallImg1 from "../assets/h1.png";
 import smallImg2 from "../assets/hb7_1 2.png";
 import smallImg3 from "../assets/hb7_1 3.png";
@@ -34,7 +32,6 @@ const Navbar = () => {
     { label: "Support", content: "Support Content Here" },
   ];
 
-  // Sample data for small cards
   const smallCardData = [
     { img: smallImg1, subtitle: "Headphone A", price: "₹1999" },
     { img: smallImg2, subtitle: "Headphone B", price: "₹2499" },
@@ -47,12 +44,10 @@ const Navbar = () => {
   return (
     <nav className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-5 z-10 backdrop-blur-md bg-gray-400/10 rounded-[30px] max-w-6xl w-[40%] md:w-[70%] py-3 border border-gray-300/20">
       <div className="px-4 flex items-center justify-between w-full relative">
-        {/* Logo (Left) */}
         <div className="text-[#00E489] flex-shrink-0 ml-1">
           <img src={logoImage} alt="Website Logo" className="w-8 h-8" />
         </div>
 
-        {/* Hamburger (Mobile) */}
         <button
           className="md:hidden text-[#00E489] focus:outline-none flex-shrink-0"
           onClick={toggleMenu}
@@ -64,7 +59,6 @@ const Navbar = () => {
           )}
         </button>
 
-        {/* Menu Items (Centered) */}
         <div
           className={`${
             isOpen ? "block" : "hidden"
@@ -87,7 +81,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Icons (Right) */}
         <div className="hidden md:flex space-x-4 text-[#00E489] flex-shrink-0 mr-2">
           <MagnifyingGlassIcon className="w-6 h-6" />
           <ShoppingCartIcon className="w-6 h-6" />
@@ -95,14 +88,12 @@ const Navbar = () => {
           <UserIcon className="w-6 h-6" />
         </div>
 
-        {/* Dialog Popup */}
         {hoveredTab !== null && (
           <div
             className="absolute left-0 top-[-1px] mt-9 backdrop-blur-md bg-gray-400/10 rounded-t-none rounded-b-[20px] border border-t-0 border-gray-300/20 min-h-[400px] z-[-1] p-4 text-white text-center"
-            style={{ width: "100%" }} // Matches Navbar width
+            style={{ width: "100%" }}
           >
             <div className="flex h-full mt-10 gap-2">
-              {/* Left Side: 6 Small Square Image Cards (3 below 3) */}
               <div className="flex flex-col justify-center items-start gap-4">
                 <div className="flex gap-2">
                   <NavCard
@@ -140,7 +131,6 @@ const Navbar = () => {
                 </div>
               </div>
 
-              {/* Right Side: Big Square Image */}
               <div className="flex items-center ml-5">
                 <div className="w-91 h-91 flex items-center justify-center">
                   <img

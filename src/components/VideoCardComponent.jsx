@@ -1,4 +1,3 @@
-// VideoCardComponent.jsx
 import React from "react";
 
 const VideoCardComponent = ({ videoSrc }) => {

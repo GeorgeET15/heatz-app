@@ -1,4 +1,3 @@
-// ItemsSection.jsx
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -192,14 +191,13 @@ const ItemsSection = () => {
 
   const tabs = ["Headset", "Mouse", "Keyboard", "10% off"];
 
-  // Update slider position and width when activeTab changes
   useEffect(() => {
     const activeTabRef = tabRefs.current[activeTab];
     if (activeTabRef) {
       setSliderStyle({
         width: `${activeTabRef.offsetWidth}px`,
         transform: `translateX(${activeTabRef.offsetLeft}px)`,
-        transition: "transform 0.3s ease", // Smooth sliding animation
+        transition: "transform 0.3s ease",
       });
     }
   }, [activeTab]);
@@ -207,7 +205,6 @@ const ItemsSection = () => {
   return (
     <section className="py-12 px-4 md:px-8 bg-black">
       <div className="max-w-6xl mx-auto">
-        {/* Tab Selection and View All */}
         <div className="mb-8 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
           <div className="relative bg-[#333333] rounded-4xl inline-flex space-x-2 items-stretch p-1 overflow-x-auto w-full sm:w-auto">
             <div
@@ -240,7 +237,6 @@ const ItemsSection = () => {
           </div>
         </div>
 
-        {/* Horizontal Card Carousel */}
         <div className="relative">
           <Swiper
             modules={[Navigation]}
